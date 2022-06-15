@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagem/x-icon" href="../Fav-Icon.png" />
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="style-registro.css">
+    <title>Pet Shop</title>
+</head>
+
+<body>
+
+    <img id="registro" class="logo logo-header" src="../Logo.png"
+        alt="Logo do pet Shop: O desenho de um cachorro e um gato sorrindo.">
+    <header>
+        <nav class="menu menu-header">
+            <a href="../Home/home.html">Home</a>
+            <a href="../Produtos/produtos.html">Produtos</a>
+            <a href="../Servicos/servicos.html">Serviços</a>
+            <a href="#registro">Registre-se</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <form class="registro" action="">
+
+            <h2>Registre-se</h2>
+
+            <fieldset class="registro-pessoa">
+
+                <label>Nome<input class="input" type="text" placeholder="Ex.: João da silva" required></label>
+                <label>Telefone<input class="input" type="tel" placeholder="Ex.: 27999887766" required></label>
+                <label>Email<input class="input" type="email" placeholder="Ex.: joaosilva@dominio.com" required></label>
+                <label>CEP<input class="input" type="number" placeholder="Ex.: 29650000" required></label>
+                <label>Rua<input class="input" type="text" placeholder="Ex.: Rua Getúlio Vargas" required></label>
+
+                <div class="input-duplo">
+                    <label>Número<input class="input input-menor" type="number" placeholder="Ex.: 296" required></label>
+                    <label>Bairro<input class="input input-maior" type="text" placeholder="Ex.: Centro"
+                            required></label>
+                </div>
+
+                <label>Complemento<input class="input" type="text" placeholder="Ex.: Em frente ao museu"
+                        required></label>
+
+                <div class="input-duplo">
+                    <label>Cidade<input class="input input-maior" type="text" placeholder="Ex.: Santa Teresa"
+                            required></label>
+                    <!-- <label>UF<input class="input input-menor" type="text" placeholder="Ex.: ES" required></label> -->
+                    <fieldset>
+                        <legend>UF</legend>
+                        <select class="input input-menor" name="" id="">
+                            <option value="">AC</option>
+                            <option value="">AL</option>
+                            <option value="">AP</option>
+                            <option value="">AM</option>
+                            <option value="">BA</option>
+                            <option value="">CE</option>
+                            <option value="">ES</option>
+                            <option value="">GO</option>
+                            <option value="">MA</option>
+                            <option value="">MT</option>
+                            <option value="">MS</option>
+                            <option value="">MG</option>
+                            <option value="">PA</option>
+                            <option value="">PB</option>
+                            <option value="">PR</option>
+                            <option value="">PE</option>
+                            <option value="">PI</option>
+                            <option value="">RJ</option>
+                            <option value="">RN</option>
+                            <option value="">RS</option>
+                            <option value="">RO</option>
+                            <option value="">RR</option>
+                            <option value="">SC</option>
+                            <option value="">SP</option>
+                            <option value="">SE</option>
+                            <option value="">TO</option>
+                            <option value="">DF</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <label>CPF<input class="input" type="number" placeholder="Ex.: 99988877766" required></label>
+
+            </fieldset>
+
+            <h2>Registre seu pet</h2>
+
+            <fieldset class="registro-pet">
+
+                <label>Nome<input class="input" type="text" placeholder="Ex.: Pingo" required></label>
+                <label>Raça<input class="input" type="text" placeholder="Ex.: Poodle" required></label>
+                <label>Idade<input class="input" type="number" placeholder="Ex.: 8" required></label>
+                <label>Alergias e restrições<textarea name="" cols="30" rows="10"></textarea></label>
+                <div class="senhas">
+                    <label>Senha<input class="input" type="password" required></label>
+                    <label>Repita sua senha<input class="input" type="password" required></label>
+                </div>
+
+            </fieldset>
+
+            <div class="checkboxes">
+                <label><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+            </div>
+
+            <input class="botao-registrar" type="submit" value="Registrar">
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="nav-footer">
+            <nav class="menu menu-footer">
+                <a href="../Home/home.html">Home</a>
+                <a href="../Produtos/produtos.html">Produtos</a>
+                <a href="../Servicos/servicos.html">Serviços</a>
+                <a href="#registro">Registre-se</a>
+            </nav>
+            <img class="logo logo-footer" src="../Logo.png"
+                alt="Logo do pet Shop: O desenho de um cachorro e um gato sorrindo.">
+        </div>
+        <p>&copy;2022 PetShop - Desenvolvido por Henrique Prezotti</p>
+    </footer>
+</body>
+
+</html>

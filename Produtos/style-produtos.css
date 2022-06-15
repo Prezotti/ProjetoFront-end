@@ -1,0 +1,149 @@
+/*Importação da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;700&family=Itim&display=swap');
+
+body{
+    background-color: #E6F2F3;
+    font-family: 'Inter', sans-serif;
+}
+ html{
+    scroll-behavior: smooth;
+ }   
+
+/*Seletores do Header*/
+
+.logo-header{
+    display: block;
+    margin: 15px auto 30px auto;
+    width: 150px;   
+}
+header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #142626;
+    margin: 10px 40px;
+}
+
+.menu a:hover{
+    color: #CEA675;
+}
+
+.menu-header{
+    background-color: #E6F2F3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Seletores do Main*/
+
+.pesquisa{
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #CCE9EC;
+    border-radius:5px;
+}
+
+#btnBuscar{
+    height: 20px;
+}
+
+#barra-pesquisa{
+    background: transparent;
+    border: none;
+    width:90%;
+    padding-left: 10px;
+  }
+
+  #barra-pesquisa:focus{
+    outline: none;
+}
+
+.produtos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 300px);
+    grid-column-gap: 50px;
+}
+
+.card{
+    background-color: #CCE9EC;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    margin: 50px 0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+	transition: 0.5s all;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.titulo-card{
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 22px;
+}
+
+.descricao-card{
+    /*text-transform: uppercase;*/
+    padding: 15px 25px;
+    line-height: 20px;
+}
+
+.preco-card{
+    font-size: 26px;
+}
+
+.img-card{
+    transition: 0.5s all;
+    height: 40%;
+}
+
+.img-card:hover{
+    transform: scale(1.1) rotate(-1.5deg);
+}
+
+
+/*Seletores do Footer*/
+
+footer{
+    background-color: #CDEDED;
+    height: 200px;
+    text-align: center;
+}
+
+.menu-footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-footer{
+    height: 100px;
+    margin-right: 40px;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

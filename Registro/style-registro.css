@@ -1,0 +1,156 @@
+/*Importação da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;700&family=Itim&display=swap');
+
+body{
+    background-color: #E6F2F3;
+    font-family: 'Inter', sans-serif;
+}
+ html{
+    scroll-behavior: smooth;
+ }   
+
+/*Seletores do Header*/
+
+.logo-header{
+    display: block;
+    margin: 15px auto 30px auto;
+    width: 150px;   
+}
+header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #142626;
+    margin: 10px 40px;
+}
+
+.menu a:hover{
+    color: #CEA675;
+}
+
+.menu-header{
+    background-color: #E6F2F3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Seletores do Main*/
+
+.registro h2{
+    font-family: 'DM Serif Text', serif;
+    font-size: 2.5em;
+    color: #013537;
+    width: 290px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.registro-pessoa, .registro-pet{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 400px);
+    grid-column-gap: 100px;
+}
+
+.registro label{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    height: 30px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+/*Tirar a setinha de incrementar e decrementar*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-duplo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-menor{
+    width: 100px;
+}
+
+.input-maior{
+    width: 280px;
+}
+
+.registro-pet textarea{
+    margin-top: 5px;
+    height: 95px;
+    resize: none;
+    padding: 5px 20px;
+    border: none;
+}
+
+.botao-registrar{
+    display: block;
+    border: none;
+    background-color: #013537;
+    width: 200px;
+    margin: 30px auto;
+    padding: 5px 0;
+    color: #ffffff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.botao-registrar:hover{
+    background-color: #005a5c;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.checkboxes label{
+    display: inline-block;
+    width: 400px;
+    margin: 10px auto;
+}
+
+
+/*Seletores do Footer*/
+
+footer{
+    background-color: #CCE9EC;
+    text-align: center;
+}
+
+.menu-footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-footer{
+    height: 100px;
+    margin-right: 40px;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

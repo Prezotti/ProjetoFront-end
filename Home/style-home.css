@@ -1,0 +1,210 @@
+/*Importação da fonte*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;700&family=Itim&display=swap');
+
+body{
+    background-color: #E6F2F3;
+    font-family: 'Inter', sans-serif;
+}
+ html{
+    scroll-behavior: smooth;
+ }   
+
+/*Seletores do Header*/
+
+.logo-header{
+    display: block;
+    margin: 15px auto 30px auto;
+    width: 150px;   
+}
+header{
+    z-index: 2;
+    position: sticky;
+    top: 0;
+}
+
+.menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #142626;
+    margin: 10px 40px;
+}
+
+.menu a:hover{
+    color: #CEA675;
+}
+
+.menu-header{
+    background-color: #E6F2F3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Seletores do Main*/
+
+.section{
+    padding: 30px 0;
+}
+
+/*Banner*/
+.banner{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.banner h1{
+    position: absolute;
+    z-index: 1;
+    font-size: 4em;
+    font-family: 'DM Serif Text', serif;
+    color: #ffffff;
+    width: 600px;
+    margin: 0 40px;
+}
+
+.banner img{
+    width: 100%;
+    filter: brightness(60%);
+}
+
+/*Sobre*/
+.titulo-section{
+    font-family: 'DM Serif Text', serif;
+    font-size: 2.5em;
+    color: #013537;
+    width: 200px;
+    margin: 40px auto;
+}
+.conteudo-sobre{
+    display: flex;
+    justify-content: space-around;
+}
+.section-texto{
+    font-size: 1.6em;
+    width: 600px;
+    text-align: justify;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Itim', cursive;
+}
+
+.section-texto p{
+    margin: 25px 0;
+}
+
+.img-sobre-nos{
+    height: 500px;
+}
+
+.botao{
+    font-size: .8em;
+    background-color: #013537;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+/*Localização*/
+.localizacao{
+    background-color: #CDEDED;
+}
+
+.conteudo-localizacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Equipe*/
+  .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .card{
+    position: relative;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 8px 0 rgba(0,0,0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .equipe img{
+    transition: .5s;
+  }
+  
+  .descricao{
+    height: 40px;
+    padding-left: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0, .7);
+    color: #ffffff;
+    transition: .5s;
+  }
+  
+  .card h3{
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card p{
+    font-size: 15px;
+    margin: 10px;
+    text-align: justify;
+    line-height: 30px;
+    visibility: hidden;
+  }
+  
+  .card:hover{
+   cursor: pointer; 
+  }
+  
+  .card:hover .descricao{
+    height: 200px;
+  }
+  
+  .card:hover p{
+    visibility: visible;
+  }
+  
+  .card:hover img{
+    transform: scale(1.1);
+  }
+
+
+/*Seletores do Footer*/
+
+footer{
+    background-color: #CCE9EC;
+    height: 200px;
+    text-align: center;
+}
+
+.menu-footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-footer{
+    height: 100px;
+    margin-right: 40px;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
